@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <script>
+          function tab() {
+        var number;
+        var result = "";
+
+        number = Number(document.getElementById("number").value);
+
+        for(var i = 1; i<= 10; i++){
+          result = result + "<p>"+number + "*" + i + "=" + number * i+"</p>";
+        }
+
+        document.getElementById("result").innerHTML = result;
+      }
+
+    </script>
+</head>
+<body>
+  <center>
+    Enter desired number : <input id="number" /> <br>
+    <button onclick="tab()">Print the table</button>
+    <div id="result">
+    </center>
+</body>
+</html>
