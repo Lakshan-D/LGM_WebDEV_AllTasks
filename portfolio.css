@@ -1,0 +1,53 @@
+.name{
+    position: relative;
+    left: 50px;
+    top: 5px;
+}
+.logo{
+    position: absolute;
+    top:0px;
+    left: 0px;
+}
+ img{
+    float: inherit;
+ }
+.mine{
+    float: left;
+    height: 200px;
+    width: 200px;
+    padding: 40px,40px,20px,40px;
+    padding-top: 10px;
+    position: relative;
+     
+    left: 300px;
+}
+
+.img1{
+    font-size: 20px;
+    height: 400px;
+    position: relative;
+    top: 100px;
+}
+ .hobbies{
+    float: center;
+    padding-left: 500px;
+    font-size: x-large;
+    margin-top: -200px;
+ }
+ .str{
+  position: relative;
+  top: 100px;
+ }
+
+ .strli{
+     
+    padding-right: 200px;
+    font-size: x-large;
+    margin-top: -200px;
+  
+ }
+ .info{
+     padding-top: 100px;
+     font-size: xx-large;
+      text-decoration: underline;
+ }
