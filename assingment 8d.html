@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ass 8b</title>
+    <script type="text/javascript">
+    function jssform()
+    {
+        var name=document.mydetails.name21.value;
+        var dob=document.mydetails.dob21.value;
+        var email=document.mydetails.email21.value;
+        var photo=document.mydetails.photo21.value;
+        var gender=document.mydetails.gender21.value;
+        alert("Confirm and Continue");
+        alert("Info Recieved");
+    }
+    </script>
+
+<body>
+    <center>
+    <form name="Personal Info">
+        <div>Name: <input type="text" name="name21"><br></div>
+        <div>Date OF Birth: <input type="date" name="dob21"><br></div>
+       <div> Phone NO: <input type="number" name="phone21"><br></div>
+        <div>Email-id: <input type="email" name="email21"><br></div>
+       <div> Gender: <input type="radio" name="gender21"> Male <input type="radio" name="gender21"> Female <input type="radio" name="gender21"><br></div>
+       <br>
+        <div>Valid ID-card: <input type="file"> <br></div>
+        <div>  <input type="submit" onclick="jssform()"> <br></div>
+    </form>
+</center>
+</body>
+</head>
+</html>
