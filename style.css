@@ -1,0 +1,37 @@
+ h1{
+     color: red;
+ }
+
+ .tabh{
+     color: seashell;
+ }
+ td{
+     size: 0ex;
+     color: sienna;
+ }
+
+ a.link{
+     color: rebeccapurples;
+ }
+
+ h2{
+     font-style: italic;
+      
+     color: salmon;
+ }
+
+ a:link{
+     color: snow;
+     background-color: tomato;
+ }
+
+ a:visited{
+     color: yellow;
+     background-color: violet;
+ }
+ #body{
+     height: 500px;
+    
+     background-image: url("bi.jpg");
+
+ }
