@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ass 9b</title>
+    <script type="text/javascript">
+        function properpassword(){
+            var pass;
+            if(pass=document.myform.userpassword.value.length>8)
+            {pass="strong";}
+            else
+            {pass="weak";}
+            document.getElementById('mylocation').innerText=pass;
+        }
+    </script>
+</head>
+<body>
+    <form name="myform">
+        <input type="password" value="password" name="userpassword" onkeyup=" properpassword()">
+        <br>
+        Strength: <span id="mylocation">no Strength</span>
+    </form>
+</body>
+</html>

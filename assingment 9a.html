@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ass 9a</title>
+    <script type="text/javascript">
+     function calccubensq(){
+         var num=document.getElementById("number").value;
+         let cube= num*num*num;
+         alert(num**3)
+         document.write("cube:",+(num**3),"<br/>");
+         alert(num**2);
+         document.write("Square:",+(num**2),"<br/>");
+     }
+    </script>
+</head>
+<body>
+    <form>
+         
+            ent num: <input type="number" id="number" name="number"/>
+         <br>
+        <br>
+        <input type="button" value="submit" onclick="calccubensq()"/>
+
+    </form>
+    
+</body>
+</html>

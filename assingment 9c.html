@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LGM Registration</title>
+</head>
+<script>
+    function lgmregt(na,em,pas,cpas,mob)
+    {
+        if(na.value==""|| em.value==""|| pas.value==""|| cpas.value==""|| mob.value=="")
+        { alert("Fill up everything");}
+        if(pas.value.length<8)
+        {alert("min 8 Ch required")}
+        if(pass.value!=cpas.value)
+        {alert("password doesn't match")}
+        if(mob.value.length<10)
+        {alert("ent valid mob no")}
+        if(na.value!="" && pas.value==cpass.value && mob.value.length==10)
+        {alert("Form Successfully sumited")
+                document.myform.em.focus();
+                document.myform.na.focus();
+                document.myform.pas.focus();
+                document.myform.mob.focus();
+        }
+        else
+        {alert("Check and fill properly")}
+    }
+</script>
+<body onload='document.myform.na.focus(),document.myform.em.focus(),document.myform.pas.focus(),document.myform.cpas.focus(),document.myform.mob.focus()'>
+  <form action="myform" action="#">
+    Name: <input type="text" placeholder="Your full name" name="na"><br>
+    Date OF Birth: <input type="date" name="date"><br>
+    Mobile No: <input type="number" name="mob">
+    E-mail: <input type="email" placeholder="Your Email" name="em"><br>
+    Gender: <input type="radio">male <input type="radio"> female <input type="radio"> other
+    <br><br>
+    Password: <input type="password" name="pas"><br>
+    Confirm Password: <input type="password" name="cpas"><br>
+    Course Of Interest: <select name="text" name="course">
+        <option> Web Development</option>
+        <option> Data Science</option>
+        <option> Machine learning</option>
+    </select><br><br>
+    <input type="submit" value="register" name="submit" onclick="lgmregt(document.myform.na,document.myform.em,document.myform.pas,document.myform.cpas,document.myform.mob)">
+    
+  </form>  
+</body>
+</html>
